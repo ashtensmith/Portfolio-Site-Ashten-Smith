@@ -3,6 +3,10 @@ Colors used:
 Primary Color (White): #FFFFFF;
 Secondary Color (Black): #00000;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
 background-color: #FFFFFF;
 font-family: 'Open Sans', sans-serif;
@@ -36,18 +40,70 @@ font-weight: 400;
 img {
   width: 100%;
 }
+header {
+  background-color: FFFFF;
+  text-align: center;
+  padding-top: 10px 0;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-left: 5px;;
+  margin: 10px;
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  -moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  position: relative;
+  width: 100%;
+}
+
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
+  background-color: #2386B5;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-radius: 0px;
+  border-bottom: 0px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+.logo {
+  max-width: 250px;
+}
+
+nav > ul { list-style-type: none; padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  text-decoration: none
+  font-weight: 700;
+  color: #000000;
+}
+nav > ul > li > a:hover { text-decoration: none;
+}
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
