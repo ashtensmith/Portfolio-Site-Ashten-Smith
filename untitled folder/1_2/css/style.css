@@ -63,6 +63,7 @@ main {padding-top: 230px}
   background-color: #2386B5;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 7px;
   border-bottom: 0px solid #994c30; /* width of the border, type, color */
@@ -170,14 +171,30 @@ width: 40%;
   padding-right: 10px;
   padding-left: 10px;
 }
-.row::after {
-content: "";
-clear: both;
-display: table;
-}
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+}
+
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+.needle {width: 100%;
+max-width: 100%;
+height: auto;}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
