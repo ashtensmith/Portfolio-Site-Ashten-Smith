@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://kit.fontawesome.com/d0fe71c6a9.js" crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <meta name="author" content="Ashten Smith">
   <meta name="description" content="Portfolio Site of Ashten Smith, UX Designer">
@@ -20,15 +21,18 @@
 <body>
   <header>
     <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
       <img class="logo" src="img/ashtenlogo.png" alt="Ashten Smith Logo">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+
         </ul>
       </nav>
-
+</div>
     </div>
   </header>
   <main>
@@ -129,6 +133,10 @@ In general, the basic skeleton, the navigation and high level details all had hi
       </div>
       </div>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 
 </body>
