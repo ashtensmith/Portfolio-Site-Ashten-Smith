@@ -53,7 +53,7 @@ padding-left: 5px;
   width: 100%;
 }
 
-main {padding-top: 56px}
+main {padding-top: 200px}
 
 
 .button {
@@ -122,7 +122,7 @@ nav > ul > li > a:hover { text-decoration: none;
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 15px;
   padding-right: 0;
   font-size: 20px;
 }
@@ -137,6 +137,7 @@ nav > ul > li > a:hover { text-decoration: none;
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
 }
+.needle {width: 100%; }
 
 
 /* ==============================
