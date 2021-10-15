@@ -1,0 +1,258 @@
+/*
+Colors used:
+Primary Color (White): #FFFFFF;
+Secondary Color (Black): #00000;
+*/
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+background-color: #FFFFFF;
+font-family: 'Open Sans', sans-serif;
+font-size: 16px; /* Sets the font size to 16px */
+font-weight: 300; /* Sets the font weight to 300 */
+line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+color: #000000;
+}
+
+
+
+h1, h2, h3, h4 {
+line-height: 1.4;
+}
+h1 {
+font-size: 2.75em;
+font-weight: 700;
+}
+
+h2 {
+font-size: 2.25em;
+font-weight: 600;
+}
+
+h3 {
+font-size: 1.75em;
+font-weight: 400;
+}
+h4 {
+font-size: 1.35em;
+font-weight: 400;
+}
+img {
+  width: 100%;
+}
+header {
+  background-color: #FFFFFF;
+  padding-top: 10px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-left: 5px;
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  -moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  position: fixed;
+  width: 100%;
+}
+
+main {padding-top: 200px}
+
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #1F79A3;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 7px;
+  border-bottom: 0px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+
+/* Layout styling */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+.logo {
+  max-width: 100px;
+}
+
+nav > ul {
+list-style-type: none; padding: 0;
+margin: 0;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000000;
+}
+nav > ul > li > a:hover { text-decoration: none;
+}
+#hero span {
+  background-color: #FFFFFF;
+  font-size: .75em;
+  padding: 20px 0;
+  display: block;
+  width: 100%;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  padding-right: 0;
+  font-size: 20px;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+.needle {width: 100%; }
+
+.linkedin {text-align: center;
+display: inline;}
+.emailicon {text-align: center;
+display: inline;}
+
+  .iconrow {text-align: center;}
+
+  .headshot {max-width: 800px;
+    margin: auto;
+      display: block;}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  nav > ul {
+  margin: 1em 0;
+}
+  nav > ul > li {
+    display: inline-block;
+  }
+  .col-md-6 {
+  width: 50%;
+  }
+  .col-md-7 {
+  width: 60%;
+  }
+  .col-md-5 {
+  width: 40%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+.logo {
+  min-width: 250px;}
+
+  .col-lg-7 {
+  width: 60%;
+  }
+  .col-lg-5 {
+  width: 40%;
+  }
+[class*="col-"]{
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+.needle {width: 100%;
+max-width: 100%;
+height: auto;}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
